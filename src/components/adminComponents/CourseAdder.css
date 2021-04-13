@@ -1,0 +1,6 @@
+.courseAdderContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top : 40px;
+    row-gap : 15px;
+}
