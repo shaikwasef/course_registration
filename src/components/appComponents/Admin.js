@@ -8,7 +8,6 @@ function Admin(props) {
         <div>
            <TopicAdder/>
            <CourseAdder/>
-           <StudentAdder/>
         </div>
     );
 }
