@@ -40,7 +40,7 @@ function CourseAdder(props) {
                 {topics}
             </select>
             <input placeholder = "Please Enter Course Name" ref = {courseName} required/>
-            <AdderButton buttonText="ADD COURSE" onClick = {() => updateCourseList(selectedTopic.current.value , courseName.current.value)} />
+            <AdderButton buttonText="ADD COURSE" onClick = {() => {updateCourseList(selectedTopic.current.value , courseName.current.value); courseName.current.value=""}} />
         </div>
     );
 }

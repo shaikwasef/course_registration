@@ -25,7 +25,7 @@ function TopicAdder(props) {
     return (
         <div className = "topicAdderContainer">
             <input placeholder = "Please Enter Topic Name" ref = {topicInput} required/>
-            <AdderButton buttonText = "ADD TOPIC" onClick ={() => postTopicInput(topicInput.current.value)}/>
+            <AdderButton buttonText = "ADD TOPIC" onClick ={() => {postTopicInput(topicInput.current.value) ; topicInput.current.value=""}}/>
         </div>
     );
 }
