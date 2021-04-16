@@ -19,7 +19,7 @@ function RegistrationArea(props) {
     
 
      const getTopics = async () => {
-        const url = "http://localhost:8080/topics";
+        const url = "https://course-registration-wasef.herokuapp.com/topics";
         await axios.get(url).then((response) => dispatch(displayNewTopicList(response.data)));
     }
 
@@ -28,7 +28,7 @@ function RegistrationArea(props) {
             alert("Select topic for registration");
             return;
         }
-        const url = "http://localhost:8080/topics/" + selectedTopic + "/courses";
+        const url = "https://course-registration-wasef.herokuapp.com/topics/" + selectedTopic + "/courses";
         await axios.get(url).then((response) => dispatch(displayNewCourseList(response.data)));
     }
 
@@ -45,7 +45,7 @@ function RegistrationArea(props) {
             alert("Choose appropriate fields");
             return;
         }
-        const url = "http://localhost:8080/students/" + studentId + "/courses";
+        const url = "https://course-registration-wasef.herokuapp.com/students/" + studentId + "/courses";
         const postCourseObject = {
             "courseId" : course ,
             "topicId" : topic

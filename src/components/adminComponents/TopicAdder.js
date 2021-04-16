@@ -11,7 +11,7 @@ function TopicAdder(props) {
             alert("Enter a topic Name");
             return;
         }
-        const url = "http://localhost:8080/topics";
+        const url = "https://course-registration-wasef.herokuapp.com/topics";
         const postTopicObject = {
             "id" : topicInput
         }

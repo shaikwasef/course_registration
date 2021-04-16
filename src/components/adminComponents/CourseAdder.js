@@ -13,7 +13,7 @@ function CourseAdder(props) {
     const selectedTopic = useRef("");
 
     const getTopics = async () => {
-        const url = "http://localhost:8080/topics";
+        const url = "https://course-registration-wasef.herokuapp.com/topics";
         await axios.get(url).then((response) => dispatch(displayNewTopicList(response.data)));
     }
 
@@ -26,7 +26,7 @@ function CourseAdder(props) {
             alert("Choose or enter correct field values");
             return;
         }
-        const url = "http://localhost:8080/topics/" + selectedTopic + "/courses";
+        const url = "https://course-registration-wasef.herokuapp.com/topics/" + selectedTopic + "/courses";
         const courseObject = {
             "id" : courseName
         }
