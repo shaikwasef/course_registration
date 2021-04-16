@@ -6,7 +6,6 @@ import {displayNewCourseList} from "../../actions/displayNewCourseList"
 import "./RegistrationArea.css"
 import RegisterButton from "./RegisterButton"
 import { showRegisteredCourses } from '../../actions/showRegisteredCourses';
-import {removeRegisteredCourses} from "../../actions/removeRegisteredCourses";
 import RegisteredCourses from './RegisteredCourses';
 
 function RegistrationArea(props) {
